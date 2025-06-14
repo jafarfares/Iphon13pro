@@ -1,7 +1,7 @@
 // document.write('jafar fares')
 //console.log(typeof'hallo jafar');
 // console.error('error');
-// window.print();
+//window.print();
 // document.write('jafar fares');
 // document.write(' jafar fares');
 // document.write(' jafar fares');
@@ -33,9 +33,9 @@ console.log(Number.isSafeInteger(55));
 console.log(Number.isNaN(55 + 'jafar'));
 console.log(Number.isInteger(55));
 
-console.log(Math.abs(-4));
-console.log(Math.sqrt(4));
-console.log(Math.pow(2,3));
+console.log(Math.abs(-4));//يشيل السالب
+console.log(Math.sqrt(4));//الجذر التربيعي
+console.log(Math.pow(2,3));//2^3
 console.log(Math.round(10.5));
 console.log(Math.ceil(10.3));
 console.log(Math.floor(10.9));
@@ -1311,15 +1311,21 @@ S:-search
 
 class:3
 ``:-Backticks
-HTML:   onkeyupهذا الايفينت يقول بمجرد ان تضغط على اي زر في الكيبورد نفذ لي ما في داخل الفانكشن
+   onkeyupهذا الايفينت يقول بمجرد ان تضغط على اي زر في الكيبورد نفذ لي ما في داخل الفانكشن
 
-<input onkeyup="getTotal()" placeholder="price" type="number" id="price">
-<input onkeyup="getTotal()" placeholder="taxes" type="number" id="taxes">
-<input onkeyup="getTotal()" placeholder="ads" type="number" id="ads">
-<input onkeyup="getTotal()" placeholder="discount" type="number" id="discount">
-
+// projec big
 
 */
+
+
+
+
+
+
+
+
+
+/*
 let price=document.getElementById('price');
 let taxes=document.getElementById('taxes');
 let ads=document.getElementById('ads');
@@ -1386,7 +1392,6 @@ sumbit.onclick=function(){
         mood='create';
         sumbit.innerHTML='Create';
         count.style.display='block';
-
     }
     
     localStorage.setItem('prodect',JSON.stringify(datapro));
@@ -1545,3 +1550,41 @@ function searchData(value){
     }
     document.getElementById('tbody').innerHTML=table;
 }
+*/
+
+
+
+let img1=document.getElementById('img1');
+let img2=document.getElementById('img2');
+let img3=document.getElementById('img3');
+let bigimg=document.getElementById('bigimg');
+
+
+
+function onimg(imgelement){
+
+    if(imgelement===img1){
+    bigimg.src="images/Purpletextured_2f0ddf4f-6c94-4a1b-85d1-f02baf6fd565.webp";
+    document.body.style.backgroundColor='#6c065f';
+
+    }
+
+    else if(imgelement===img2){
+    bigimg.src="images/Pink_adea2431-5c08-4178-beaf-819ae93d9483.webp";
+    document.body.style.backgroundColor='#afa449';
+    
+    }
+
+    else if(imgelement===img3){
+        
+    bigimg.src="images/bluesatinmetallic_bdf27804-7352-4daa-a937-d51684bf5814.webp";
+    document.body.style.backgroundColor='#269aa8';
+    
+    }
+
+    else{
+        document.body.style.backgroundColor='#6c065f';}
+    }
+
+
+
